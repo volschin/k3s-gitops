@@ -8,7 +8,7 @@ on:
     paths: ["bootstrap/templates/**"]
 
 env:
-  KUBERNETES_DIR: ./kubernetes
+  KUBERNETES_DIR: ./bootstrap/templates
   SCHEMA_DIR: /home/runner/crds
 
 jobs:
