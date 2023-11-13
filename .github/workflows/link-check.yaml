@@ -25,8 +25,7 @@ jobs:
         uses: micalevisk/last-issue-action@f5661581217cc78cc282d1351aa65bd8bd155003 # v2.2.1
         with:
           state: open
-          labels: |
-            broken-links
+          labels: broken-links
 
       - name: Update Issue
         uses: peter-evans/create-issue-from-file@433e51abf769039ee20ba1293a088ca19d573b7f # v4.0.1
@@ -35,5 +34,4 @@ jobs:
           issue-number: "${{ steps.link-checker-issue.outputs.issue-number }}"
           content-filepath: ./lychee/out.md
           token: "${{ secrets.GITHUB_TOKEN }}"
-          labels: |
-            broken-links
+          labels: broken-links
