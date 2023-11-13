@@ -2,11 +2,13 @@
 .DS_Store
 Thumbs.db
 # k8s
-kubeconfig
+kubeconfig*
+config.xml
 .decrypted~*.yaml
 .config.env
 *.agekey
 *.pub
 *.key
+*.pem
 # Ansible
 .venv*
