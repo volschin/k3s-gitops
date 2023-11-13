@@ -1,9 +1,17 @@
 ---
 # Area
+- name: area/addons
+  color: "72ccf3"
+  description: >-
+    Changes made in addons
 - name: area/ansible
   color: "72ccf3"
   description: >-
     Changes made in ansible
+- name: area/bootstrap
+  color: "72ccf3"
+  description: >-
+    Changes made in bootstrap
 - name: area/infrastructure
   color: "72ccf3"
   description: >-
