@@ -34,7 +34,7 @@ find "${KUBERNETES_DIR}/kubernetes/flux" -maxdepth 1 -type f -name '*.yaml' -pri
 done
 
 echo "=== Validating kustomizations in ${KUBERNETES_DIR}/kubernetes/flux ==="
-find "${KUBERNETES_DIR}/flux" -type f -name $kustomize_config -print0 | while IFS= read -r -d $'\0' file;
+find "${KUBERNETES_DIR}/kubernetes/flux" -type f -name $kustomize_config -print0 | while IFS= read -r -d $'\0' file;
   do
     echo "=== Validating kustomizations in ${file/%$kustomize_config} ==="
     kustomize build "${file/%$kustomize_config}" "${kustomize_args[@]}" | \
@@ -45,7 +45,7 @@ find "${KUBERNETES_DIR}/flux" -type f -name $kustomize_config -print0 | while IF
 done
 
 echo "=== Validating kustomizations in ${KUBERNETES_DIR}/kubernetes/apps ==="
-find "${KUBERNETES_DIR}/apps" -type f -name $kustomize_config -print0 | while IFS= read -r -d $'\0' file;
+find "${KUBERNETES_DIR}/kubernetes/apps" -type f -name $kustomize_config -print0 | while IFS= read -r -d $'\0' file;
   do
     echo "=== Validating kustomizations in ${file/%$kustomize_config} ==="
     kustomize build "${file/%$kustomize_config}" "${kustomize_args[@]}" | \
