@@ -3,6 +3,7 @@ area/ansible:
   - "ansible/**/*"
   - "bootstrap/templates/ansible/**/*"
   - "bootstrap/tasks/ansible/**/*"
+  - "requirements.txt"
 area/github:
   - ".github/**/*"
 area/kubernetes:
@@ -16,3 +17,7 @@ area/addons:
   - "bootstrap/templates/addons/**/*"
   - "bootstrap/tasks/addons/**/*"
   - "bootstrap/vars/addons.sample.yaml"
+area/hack:
+  - "hack/**/*"
+area/terraform:
+  - "terraform/**/*"
