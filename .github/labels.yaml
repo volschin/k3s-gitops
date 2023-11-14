@@ -1,34 +1,34 @@
 ---
 # Area
-- name: area/addons
+- name: 🧩 area/addons
   color: "72ccf3"
   description: >-
     Changes made in addons
-- name: area/ansible
+- name: 👣 area/ansible
   color: "72ccf3"
   description: >-
     Changes made in ansible
-- name: area/bootstrap
+- name: 🥾 area/bootstrap
   color: "72ccf3"
   description: >-
     Changes made in bootstrap
-- name: area/infrastructure
+- name: 🏢 area/infrastructure
   color: "72ccf3"
   description: >-
     Changes made in the infrastructure directory
-- name: area/github
+- name: 😺 area/github
   color: "72ccf3"
   description: >-
     Changes made in the github directory
-- name: area/kubernetes
+- name: ☸️ area/kubernetes
   color: "72ccf3"
   description: >-
     Changes made in the kubernetes directory
-- name: area/terraform
+- name: 🌍 area/terraform
   color: "72ccf3"
   description: >-
     Changes made in terraform
-- name: area/hack
+- name: 🛠️ area/hack
   color: "72ccf3"
   description: >-
     Changes made in the hack directory
@@ -61,20 +61,20 @@
 - name: type/break
   color: "F6412D"
 # Release Issue
-- name: image-not-found
+- name: 💽 image-not-found
   color: "ee0701"
 # Uncategorized
-- name: bug
+- name: 🐛 bug
   color: "ee0701"
-- name: do-not-merge
+- name: ⛔️ do-not-merge
   color: "ee0701"
-- name: docs
+- name: 📖 docs
   color: "F4D1B7"
-- name: enhancement
+- name: 🎉 enhancement
   color: "84b6eb"
-- name: broken-links
+- name: ❌ broken-links
   color: "7B55D7"
-- name: question
+- name: ❓ question
   color: "cc317c"
-- name: community
+- name: 👥 community
   color: "0e8a16"
