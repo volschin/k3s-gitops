@@ -1,0 +1,8 @@
+---
+kubernetes:
+  children:
+    master:
+      hosts:
+        master0:
+          ansible_user: volsch
+          ansible_host: 192.168.2.132
