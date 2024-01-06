@@ -3,6 +3,6 @@ kubernetes:
   children:
     master:
       hosts:
-        master0:
+        k3s-server-1:
           ansible_user: volsch
           ansible_host: 192.168.2.132
