@@ -25,7 +25,7 @@ jobs:
         format: "sarif"
     - name: PR Suggester according to SARIF file
       if: github.event_name == 'pull_request_target'
-      uses: HollowMan6/sarif4reviewdog@v1.0.0
+      uses: HollowMan6/sarif4reviewdog@1dce5522fa5792a629d99ef000e474699a9a9b8e # v1.0.1
       with:
         file: 'results.sarif'
         level: warning
