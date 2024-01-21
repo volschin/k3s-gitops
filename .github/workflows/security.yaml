@@ -20,7 +20,7 @@ jobs:
     - uses: kubescape/github-action@main
       with:
         files: ${{ steps.changed-files.outputs.all_changed_files }}
-        frameworks: NSA,MITRE,CIS
+        frameworks: NSA,MITRE,AllControls
         fixFiles: true
         format: "sarif"
     - name: PR Suggester according to SARIF file
