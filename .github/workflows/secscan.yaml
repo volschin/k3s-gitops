@@ -16,11 +16,7 @@ jobs:
       with:
         format: sarif
         outputFile: results
-        frameworks: NSA,MITRE
-        # # Optional: Specify the Kubescape Portal credentials 
-        # account: ${{secrets.KUBESCAPE_ACCOUNT}}
-        # accessKey: ${{secrets.KUBESCAPE_ACCESS_KEY}}
-        # server: ${{ vars.KUBESCAPE_SERVER }}
+        frameworks: NSA,MITRE,CIS
         # Optional: Scan a specific path. Default will scan the whole repository
         files: "kubernetes/*.yaml"
     - name: Upload Kubescape scan results to Github Code Scanning
