@@ -19,7 +19,7 @@ jobs:
         outputFile: results
         frameworks: NSA,MITRE,AllControls
         # Optional: Scan a specific path. Default will scan the whole repository
-        files: "kubernetes/*.yaml"
+        files: "kubernetes/**.yaml"
     - name: Upload Kubescape scan results to Github Code Scanning
       uses: github/codeql-action/upload-sarif@0b21cf2492b6b02c465a3e5d7c473717ad7721ba # v3
       with:
