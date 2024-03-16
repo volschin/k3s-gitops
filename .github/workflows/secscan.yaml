@@ -21,6 +21,6 @@ jobs:
         # Optional: Scan a specific path. Default will scan the whole repository
         files: "kubernetes/**.yaml"
     - name: Upload Kubescape scan results to Github Code Scanning
-      uses: github/codeql-action/upload-sarif@8a470fddafa5cbb6266ee11b37ef4d8aae19c571 # v3
+      uses: github/codeql-action/upload-sarif@3ab4101902695724f9365a384f86c1074d94e18c # v3
       with:
         sarif_file: results.sarif
